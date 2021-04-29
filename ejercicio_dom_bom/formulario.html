@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>Ejercicio DOM, BOM, funciones</title>
+        <script type="text/javascript" src="ejercicio_dom.js"></script>
+        <style>
+        .box{
+            width: 200px;
+            height: 250px;
+            float: left;
+            margin: 20px;
+        }
+        .dashed{
+            border:3px dashed black;
+            padding: 5px;
+        }
+        </style>
+    </head>
+    <body>
+        <!--Formulario con nombre apellidos edad boton con evento submit, 
+        mostrar los datos por pantalla de lo introducido,
+        tener boton que al darle click nos muestra los datos actuales del formulario
+        realizar validacion en javascript-->
+        <h1>Ejercicio  DOM, BOM, funciones</h1>
+
+        <div class="box">
+            <form action="#" method="POST" id="formulario" onsubmit="return false;">
+                <label for="nombre">Nombre</label><br/>
+                <input type="text" name="nombre" id="nombre" /> <br/>
+
+                <label for="apellidos">Apellidos</label><br/>
+                <input type="text" name="apellidos" id="apellidos" /><br/>
+
+                <label for="edad">Edad</label><br/>
+                <input type="text" name="edad" id="edad" /><br/>
+
+                <input type="submit" value="Enviar" id="submit"/>
+            </form>
+        </div>
+
+        <div class="box dashed">
+            <h3>Información del usuario</h3>
+            <hr/>
+        </div>
+    </body>
+</html>
